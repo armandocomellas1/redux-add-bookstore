@@ -35,12 +35,6 @@ export const addBook = (props) => {
   };
 };
 
-export const delBook = () => {
-  return {
-    type: DEL,
-  };
-};
-
 // Actions
 // export const triggerAdd = (props) => {
 //   store.dispatch(add(props));
