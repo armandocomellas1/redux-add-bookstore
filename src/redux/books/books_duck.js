@@ -1,47 +1,51 @@
-import { createStore } from '@reduxjs/toolkit';
-
-console.log('ducks');
+console.log('Books');
 // Variables
-const ADD = 'ADD';
-const DEL = 'DEL';
+const ADD = 'BOOKSTORE/BOOKS/ADD';
+const DEL = 'BOOKSTORE/BOOKS/DEL';
 
 // Reducers
 const initialData = {
-  array: [],
+  array: [
+    { title: 'Armando', author: 'mio' },
+    { title: 'Carlos', author: 'Vivas' },
+  ],
+};
+
+const actionAdd = (prevState, action) => {
+  const newState = {
+    ...prevState,
+    array: [...prevState.array, action.book],
+  };
+  return newState;
 };
 
 const booksReducer = (state = initialData, action) => {
-  console.log('state', state);
-  console.log('action', action);
+  console.log('triggerAdd', action);
   switch (action.type) {
     case ADD:
-      return state.array.push(action.book);
+      return actionAdd(state, action);
     default:
       return state;
   }
 };
 
-// Store
-const store = createStore(booksReducer);
-
 // Actions creators
-const add = (props) => {
-  console.log('add', props);
+export const addBook = (props) => {
   return {
     type: ADD,
     book: props,
   };
 };
 
-const del = () => {
+export const delBook = () => {
   return {
     type: DEL,
   };
 };
 
 // Actions
-const listenAdd = (props) => {
-  store.dispatch(add(props));
-};
+// export const triggerAdd = (props) => {
+//   store.dispatch(add(props));
+// };
 
-export { initialData, listenAdd };
+export default booksReducer;

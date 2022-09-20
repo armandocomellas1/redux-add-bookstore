@@ -1,13 +1,15 @@
 import './App.css';
 import React from 'react';
+import { Provider } from 'react-redux';
 import {
   BrowserRouter,
   Routes,
   Route,
   Link,
 } from 'react-router-dom';
-import Books from './components/Books';
+import BookList from './components/BooksList';
 import Categories from './components/Categories';
+import store from './redux/store';
 
 const Navegation = () => (
   <div className="nav_main_cont">
@@ -24,13 +26,15 @@ const Navegation = () => (
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navegation />
-      <Routes>
-        <Route path="/*" element={<Books />} />
-        <Route path="/categories" element={<Categories />} />
-      </Routes>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Navegation />
+        <Routes>
+          <Route path="/*" element={<BookList />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
+      </BrowserRouter>
+    </Provider>
   );
 }
 

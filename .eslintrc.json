@@ -25,6 +25,8 @@
     "arrow-body-style": "off",
     "react/prop-types": "off",
     "jsx-a11y/label-has-associated-control": "off",
+    "import/no-cycle": "off",
+    "react/jsx-props-no-spreading": "off",
     "max-len": "off",
     "no-shadow": "off"
   },
