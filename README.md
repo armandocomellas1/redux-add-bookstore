@@ -1,5 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-# Bookstore: initialize project with components
+# Bookstore: add reducers and actions
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -7,12 +7,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - HTML5.
 - CSS.
-- React
+- React.
 - Visual Studio Code.
-- Git
-- GitHub
-- Webpack
-- ECMA6
+- Git.
+- GitHub.
+- Webpack.
+- ECMA6.
+- React-Redux.
 - The header have 2 pages: Books and Categories.
 
 ## Getting Started with Create React App
@@ -41,7 +42,7 @@ If you want to clone this project:
 - Run the code using [live server](https://www.google.com/search?client=safari&rls=en&q=live+server&ie=UTF-8&oe=UTF-8)
 
 ### Install
-- Feel free to clone the repository at this URL: https://github.com/armandocomellas1/react-math-magic
+- Feel free to clone the repository at this URL: https://github.com/armandocomellas1/redux-add-bookstore.git
 
 ### Usage
 - Make changes to javascript and html files then submit pull requests
