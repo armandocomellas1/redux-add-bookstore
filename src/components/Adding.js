@@ -4,18 +4,6 @@ import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books_duck';
 
-const updatingData = (event) => {
-  event.preventDefault();
-  console.log(event);
-  const getInputData = event.target.children[2].children[0].value;
-  const getAuthorData = event.target.children[2].children[1].value;
-
-  const objBook = {
-    title: getInputData,
-    author: getAuthorData,
-  };
-};
-
 const Adding = () => {
   const { register, handleSubmit } = useForm();
   const dispatch = useDispatch();

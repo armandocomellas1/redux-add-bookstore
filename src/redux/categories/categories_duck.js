@@ -1,10 +1,9 @@
-console.log('Categories');
 // Variables
 const CHECK = 'BOOKSTORE/CATEGORIES/CHECK';
 
 // Reducers
 const initialData = {
-  array: [],
+  array: ['Check status'],
 };
 
 const checkAdd = (prevState, action) => {
@@ -16,7 +15,6 @@ const checkAdd = (prevState, action) => {
 };
 
 const categoriesReducer = (state = initialData, action) => {
-  console.log('triggerAdd', action);
   switch (action.type) {
     case CHECK:
       return checkAdd(state, action);

@@ -1,4 +1,3 @@
-console.log('Books');
 // Variables
 const ADD = 'BOOKSTORE/BOOKS/ADD';
 const DEL = 'BOOKSTORE/BOOKS/DEL';
@@ -20,7 +19,6 @@ const actionAdd = (prevState, action) => {
 };
 
 const booksReducer = (state = initialData, action) => {
-  console.log('triggerAdd', action);
   switch (action.type) {
     case ADD:
       return actionAdd(state, action);

@@ -8,7 +8,7 @@ import {
   Link,
 } from 'react-router-dom';
 import BookList from './components/BooksList';
-import Categories from './components/Categories';
+import CategoriesList from './components/CatList';
 import store from './redux/store';
 
 const Navegation = () => (
@@ -31,7 +31,7 @@ function App() {
         <Navegation />
         <Routes>
           <Route path="/*" element={<BookList />} />
-          <Route path="/categories" element={<Categories />} />
+          <Route path="/categories" element={<CategoriesList />} />
         </Routes>
       </BrowserRouter>
     </Provider>
