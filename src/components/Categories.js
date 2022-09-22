@@ -7,11 +7,9 @@ const Categories = (props) => {
   // const getArrData = Object.values(props);
   const { status } = props;
   // const objectPro = Object.values(props).join('');
-  console.log('getstatus', status);
   const { register, handleSubmit } = useForm();
   const dispatch = useDispatch();
   const submit = () => {
-    console.log('getLast');
     dispatch(checkStatus('Under construction'));
   };
 

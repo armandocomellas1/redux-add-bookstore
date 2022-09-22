@@ -12,7 +12,6 @@ const ACTION_PREPEND = 'bookstore/books';
 const createBookStore = createAsyncThunk(`${ACTION_PREPEND}/CREATEID`, async () => {
   const response = await axios.post(createApp);
   const stringResp = response.data;
-  console.log('CreateBookStore', stringResp);
   return stringResp;
 });
 const postBookPath = `${createApp}${craetedID}/books`;
@@ -20,7 +19,6 @@ const postBookPath = `${createApp}${craetedID}/books`;
 const getListItems = createAsyncThunk(`${ACTION_PREPEND}/FETCHBOOKS`, async () => {
   const response = await axios.get(postBookPath);
   const stringResp = response.data;
-  console.log('GetListItems', stringResp);
   return stringResp;
 });
 
@@ -34,12 +32,8 @@ const createBook = (data) => ({
 });
 
 const postBook = createAsyncThunk(`${ACTION_PREPEND}/ADDBOOK`, async (data, thunkAPI) => {
-  console.log('dataForm', data);
-  console.log('thunkAPI', thunkAPI);
   const book = createBook(data);
-  console.log('ID book', book);
   const response = await axios.post(postBookPath, book);
-  console.log('postBook', response);
 
   const stringResp = {
     data: response.data,
@@ -54,9 +48,7 @@ const postBook = createAsyncThunk(`${ACTION_PREPEND}/ADDBOOK`, async (data, thun
 
 const deleteBook = createAsyncThunk(`${ACTION_PREPEND}/DELETBOOK`, async (itemId, thunkAPI) => {
   const deleteBookPath = `${createApp}${craetedID}/books/${itemId}`;
-  console.log('deleteBookPath', itemId);
   const response = await axios.delete(deleteBookPath);
-  console.log('postBook', response);
 
   const stringResp = {
     data: response.data,

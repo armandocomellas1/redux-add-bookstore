@@ -16,9 +16,6 @@ const BookList = () => {
   // const listBooks = useSelector((store) => {
   //   return store.books.array;
   // });
-  console.log('listBooks', books);
-  console.log('loading', loading);
-
   return (
     <div>
       {
