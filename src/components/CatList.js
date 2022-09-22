@@ -5,11 +5,12 @@ const CategoriesList = () => {
   const listCategories = useSelector((store) => {
     return store.categories.array;
   });
+  const getOne = listCategories[listCategories.length - 1];
   return (
     <div>
       <Categories
-        {
-          ...listCategories
+        status={
+          getOne
         }
       />
     </div>

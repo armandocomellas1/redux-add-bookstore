@@ -9,7 +9,7 @@ const initialData = {
 const checkAdd = (prevState, action) => {
   const newState = {
     ...prevState,
-    array: [...prevState.array, action.categories],
+    array: [...prevState.array, action.payload],
   };
   return newState;
 };
@@ -27,7 +27,7 @@ const categoriesReducer = (state = initialData, action) => {
 export const checkStatus = (props) => {
   return {
     type: CHECK,
-    categories: props,
+    payload: props,
   };
 };
 
