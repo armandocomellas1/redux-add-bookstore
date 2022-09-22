@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import booksReducer from './books/books_duck';
+import booksReducer from '../thunk';
 import categoriesReducer from './categories/categories_duck';
 
 const reducer = {
