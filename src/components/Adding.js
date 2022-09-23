@@ -24,7 +24,7 @@ const Adding = () => {
           <input {...register('title')} placeholder="Book title" />
           <input {...register('author')} placeholder="Author" />
           <input {...register('category')} placeholder="Categories" />
-          <button type="submit">ADD BOOK</button>
+          <button type="submit"><span>ADD BOOK</span></button>
         </div>
       </form>
     </div>

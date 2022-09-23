@@ -13,11 +13,53 @@
 
 .nav_container nav > a {
   margin-right: 5%;
+  text-decoration: none;
 }
 
-.oval {
+.nav_container nav > a:nth-child(1) {
+  color: #0290ff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.nav_container nav > a:nth-child(2) {
+  color: #121212;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+}
+
+.nav_container nav > a:nth-child(3) {
+  color: #121212;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+}
+
+.nav_container .oval {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: solid 1px #e8e8e8;
+}
+
+.nav_container .oval > svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 100%;
 }

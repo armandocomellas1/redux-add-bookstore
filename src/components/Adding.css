@@ -5,19 +5,78 @@
 .add_main_cont .adds_container {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .add_main_cont .adds_container hr {
   height: 0.125rem;
   border: solid 1px #e8e8e8;
+  margin-top: 2rem;
 }
 
 .add_main_cont .adds_container h2 {
   margin-top: 2%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+  margin-bottom: 1rem;
 }
 
 .add_main_cont .adds_container .form_container {
   display: flex;
+  width: 100%;
+}
+
+.add_main_cont .adds_container .form_container > input:nth-child(1) {
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1rem;
+  width: 25%;
+}
+
+.add_main_cont .adds_container .form_container > input:nth-child(2) {
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1rem;
+  width: 25%;
+  margin-right: 5%;
+}
+
+.add_main_cont .adds_container .form_container > input:nth-child(3) {
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1rem;
+  width: 20%;
+  margin-right: 5%;
+}
+
+.add_main_cont .adds_container .form_container button {
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  width: 20%;
+}
+
+.add_main_cont .adds_container .form_container button span {
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.7rem;
+  font-stretch: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
 }
