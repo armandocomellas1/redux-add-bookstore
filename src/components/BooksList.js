@@ -16,6 +16,10 @@ const BookList = () => {
   // const listBooks = useSelector((store) => {
   //   return store.books.array;
   // });
+  const percentGen = () => {
+    return Math.floor(Math.random() * 100);
+  };
+
   return (
     <div>
       {
@@ -24,6 +28,7 @@ const BookList = () => {
             <Book
               key={`books-lisk-card-${book.itemId}`}
               {...book}
+              value={percentGen()}
             />
           );
         })
