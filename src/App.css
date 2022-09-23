@@ -21,19 +21,12 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
 }
 
 .nav_container nav > a:nth-child(2) {
   color: #121212;
   font-size: 0.813rem;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1.9px;
 }
 
@@ -43,9 +36,6 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1.9px;
 }
 

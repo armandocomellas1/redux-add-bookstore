@@ -3,8 +3,6 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { deleteBook } from '../thunk';
 
-// const getPercent = `${percentGen}%`;
-
 const Book = (props) => {
   const dispatch = useDispatch();
   const {
@@ -15,8 +13,6 @@ const Book = (props) => {
     value,
   } = props;
   const submit = () => {
-    // const getIDtoDel = event.target.parentElement.parentElement.id;
-    // document.getElementById(getIDtoDel).remove();
     dispatch(deleteBook(itemId));
   };
   const percentGen = () => {
